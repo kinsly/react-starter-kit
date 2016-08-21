@@ -1,21 +1,7 @@
-var path = require('path');
+var config = require("./config/config.js");
 
-module.exports = {
-  entry: {
-    app: ["./src/main.js"]
-  },
-  output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
-  },
-  module: {
-    loaders: [
-      {
-        exclude: /node_modules/,
-        loaders: ['babel'],
-        test: /\.js$/,
-
-      }
-    ]
-  },
-};
+if(config.NODE_ENV == "production"){
+  module.exports = require("./webpack.prod.js");
+}else{
+  module.exports = require("./webpack.dev.js");
+}

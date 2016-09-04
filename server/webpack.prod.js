@@ -1,11 +1,12 @@
 var path = require('path');
 var webpack = require("webpack");
 module.exports = {
+  devtool: 'source-map',
   entry: {
-    app: ["./src/main.js"]
+    app: ["./src/entry.js"]
   },
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname,"..", "public"),
     filename: "bundle.js"
   },
   module: {

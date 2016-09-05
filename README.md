@@ -16,7 +16,7 @@ Open your browser and run.
 To run application in inline mode 
 **localhost:3000/webpack-dev-server/index.html**
 
-## For Production Modde
+## For Production Mode
 
 ```
 npm run build

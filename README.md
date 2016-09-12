@@ -1,5 +1,6 @@
 # react-starter-kit
 
+#Click here for [Documentation](http://www.aztutorialz.com/posts/react/16/react-starter-kit.php)
 
 ## For Development Mode 
 
